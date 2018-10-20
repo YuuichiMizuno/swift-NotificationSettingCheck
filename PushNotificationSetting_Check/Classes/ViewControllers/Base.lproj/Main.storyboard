@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dBr-bP-CWl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Oc3-aW-2Cm">
+            <objects>
+                <viewController id="dBr-bP-CWl" customClass="ViewController" customModule="PushNotificationSetting_Check" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6T-eo-c7f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-wz-0ds">
+                                <rect key="frame" x="102" y="142" width="170" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="OgI-kF-5t0"/>
+                                    <constraint firstAttribute="height" constant="50" id="VCT-Sy-rKw"/>
+                                </constraints>
+                                <state key="normal" title="TransitionToAppSetting"/>
+                                <connections>
+                                    <action selector="didTapTransitionToAppsettingButton:" destination="dBr-bP-CWl" eventType="touchUpInside" id="oQ4-Ix-jgu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ref-LI-WsS">
+                                <rect key="frame" x="98.5" y="252" width="177" height="30"/>
+                                <state key="normal" title="SuggestNoticePermission"/>
+                                <connections>
+                                    <action selector="didTapSuggestNoticePermissionButton:" destination="dBr-bP-CWl" eventType="touchUpInside" id="VBB-Rf-u4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20E-d8-LZR">
+                                <rect key="frame" x="109" y="485.5" width="156" height="30"/>
+                                <state key="normal" title="AlreadyRegisteredAPN">
+                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAlreadyRegisteredAPN:" destination="dBr-bP-CWl" eventType="touchUpInside" id="ZiC-We-DFX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lqf-wz-0ds" firstAttribute="centerY" secondItem="Z6T-eo-c7f" secondAttribute="centerY" multiplier="0.5" id="A2a-eA-gff"/>
+                            <constraint firstItem="20E-d8-LZR" firstAttribute="centerX" secondItem="Z6T-eo-c7f" secondAttribute="centerX" id="NLC-tt-CXu"/>
+                            <constraint firstItem="Ref-LI-WsS" firstAttribute="centerY" secondItem="Z6T-eo-c7f" secondAttribute="centerY" multiplier="0.8" id="Vz4-IX-TTi"/>
+                            <constraint firstItem="Ref-LI-WsS" firstAttribute="centerX" secondItem="Z6T-eo-c7f" secondAttribute="centerX" id="bBR-TW-are"/>
+                            <constraint firstItem="20E-d8-LZR" firstAttribute="centerY" secondItem="Z6T-eo-c7f" secondAttribute="centerY" multiplier="1.5" id="q29-cw-y63"/>
+                            <constraint firstItem="lqf-wz-0ds" firstAttribute="centerX" secondItem="Z6T-eo-c7f" secondAttribute="centerX" id="rbr-0t-FcC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YJS-4u-kXH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bh-rA-VYa" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
